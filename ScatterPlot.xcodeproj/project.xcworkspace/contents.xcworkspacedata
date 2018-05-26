@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LinePlot.xcodeproj">
+      location = "self:/Users/bromberger1/dev/swift/LinePlot/ScatterPlot.xcodeproj">
    </FileRef>
 </Workspace>

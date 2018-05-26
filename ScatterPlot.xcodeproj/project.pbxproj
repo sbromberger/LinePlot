@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D05FEA420B65B6900D57D32 /* LinePlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinePlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D05FEA420B65B6900D57D32 /* ScatterPlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScatterPlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D05FEA720B65B6900D57D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D05FEA920B65B6900D57D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D05FEAB20B65B6B00D57D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				5D05FEB720B65B9C00D57D32 /* PlotThings.swift */,
-				5D05FEA620B65B6900D57D32 /* LinePlot */,
+				5D05FEA620B65B6900D57D32 /* ScatterPlot */,
 				5D05FEA520B65B6900D57D32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		5D05FEA520B65B6900D57D32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D05FEA420B65B6900D57D32 /* LinePlot.app */,
+				5D05FEA420B65B6900D57D32 /* ScatterPlot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D05FEA620B65B6900D57D32 /* LinePlot */ = {
+		5D05FEA620B65B6900D57D32 /* ScatterPlot */ = {
 			isa = PBXGroup;
 			children = (
 				5D05FEA720B65B6900D57D32 /* AppDelegate.swift */,
@@ -63,15 +63,15 @@
 				5D05FEB020B65B6B00D57D32 /* Info.plist */,
 				5D05FEB120B65B6B00D57D32 /* LinePlot.entitlements */,
 			);
-			path = LinePlot;
+			path = ScatterPlot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D05FEA320B65B6900D57D32 /* LinePlot */ = {
+		5D05FEA320B65B6900D57D32 /* ScatterPlot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D05FEB420B65B6B00D57D32 /* Build configuration list for PBXNativeTarget "LinePlot" */;
+			buildConfigurationList = 5D05FEB420B65B6B00D57D32 /* Build configuration list for PBXNativeTarget "ScatterPlot" */;
 			buildPhases = (
 				5D05FEA020B65B6900D57D32 /* Sources */,
 				5D05FEA120B65B6900D57D32 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = LinePlot;
+			name = ScatterPlot;
 			productName = LinePlot;
-			productReference = 5D05FEA420B65B6900D57D32 /* LinePlot.app */;
+			productReference = 5D05FEA420B65B6900D57D32 /* ScatterPlot.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5D05FE9F20B65B6900D57D32 /* Build configuration list for PBXProject "LinePlot" */;
+			buildConfigurationList = 5D05FE9F20B65B6900D57D32 /* Build configuration list for PBXProject "ScatterPlot" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D05FEA320B65B6900D57D32 /* LinePlot */,
+				5D05FEA320B65B6900D57D32 /* ScatterPlot */,
 			);
 		};
 /* End PBXProject section */
@@ -273,15 +273,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LinePlot/LinePlot.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScatterPlot/ScatterPlot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LinePlot/Info.plist;
+				INFOPLIST_FILE = ScatterPlot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bromberger.LinePlot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bromberger.ScatterPlot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -291,15 +291,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LinePlot/LinePlot.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScatterPlot/ScatterPlot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LinePlot/Info.plist;
+				INFOPLIST_FILE = ScatterPlot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bromberger.LinePlot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bromberger.ScatterPlot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -308,7 +308,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D05FE9F20B65B6900D57D32 /* Build configuration list for PBXProject "LinePlot" */ = {
+		5D05FE9F20B65B6900D57D32 /* Build configuration list for PBXProject "ScatterPlot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D05FEB220B65B6B00D57D32 /* Debug */,
@@ -317,7 +317,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D05FEB420B65B6B00D57D32 /* Build configuration list for PBXNativeTarget "LinePlot" */ = {
+		5D05FEB420B65B6B00D57D32 /* Build configuration list for PBXNativeTarget "ScatterPlot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D05FEB520B65B6B00D57D32 /* Debug */,
