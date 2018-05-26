@@ -108,10 +108,10 @@ struct PlotArea : Renderable {
     
     var yLabelArea: NSRect {
         let fontHeight = PlotArea.fontHeight
-        let width = 20.0
+        let width = upperRight.y - lowerLeft.y
         print("upperRight.y = \(upperRight.y), lowerLeft.y = \(lowerLeft.y)")
-        let height = upperRight.y - lowerLeft.y - (fontHeight * 4.0)
-        return NSRect(x:lowerLeft.x, y:lowerLeft.y + fontHeight, width: width, height: height)
+        let height = fontHeight
+        return NSRect(x:lowerLeft.y, y:lowerLeft.x - fontHeight, width: width, height: height)
     }
 }
 
@@ -216,17 +216,18 @@ struct ScatterPlot : Renderable {
             .paragraphStyle: paraStyle
         ]
         xLabel.draw(in:plotArea.xLabelArea, withAttributes: xAttributes)
+
         let yAttributes: [NSAttributedStringKey : Any] = [
-            .verticalGlyphForm: NSNumber(integerLiteral: 1),
             .paragraphStyle: paraStyle,
-                
-            
         ]
         
         let trans = NSAffineTransform()
         trans.rotate(byDegrees: 90)
+        context.saveGState()
+        context.rotate(by: CGFloat.pi / 2)
         
         yLabel.draw(in: plotArea.yLabelArea, withAttributes:yAttributes)
+        context.restoreGState()
     }
 }
 //var circle = Circle(center: CGPoint(x: 187.5, y: 333.5), radius: 93.75)
